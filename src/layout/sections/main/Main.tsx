@@ -17,8 +17,6 @@ export const Main: React.FC = () => {
 };
 
 const StyledMain = styled.div`
-    min-height: 100vh;
-    min-width: 100vh;
     background-image: url(${photo});
 `
 
