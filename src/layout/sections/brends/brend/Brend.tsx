@@ -2,10 +2,17 @@ import React from "react";
 import styled from "styled-components";
 import { Icon } from "../../../../components/icon/Icon";
 
-export const Brend = () => {
+type BrendPropsType = {
+    iconId: string
+    width: string
+    height: string
+    viewBox: string
+}
+
+export const Brend = (props: BrendPropsType) => {
     return (
         <StyledBrend>
-            <Icon iconId="brend01" width="78" height="78" viewBox="0 0 78 78"/>
+            <Icon iconId={props.iconId} width={props.width} height={props.height} viewBox={props.viewBox}/>
         </StyledBrend>
     )
 }
