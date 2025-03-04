@@ -1,6 +1,7 @@
 import './App.css'
 import { Header } from './layout/header/Header'
 import { About } from './layout/sections/about/About';
+import { Blog } from './layout/sections/blog/Blog';
 import { Brends } from './layout/sections/brends/Brends';
 import { Main } from './layout/sections/main/Main'
 import { Offer } from './layout/sections/offer/Offer';
@@ -17,6 +18,7 @@ function App() {
       <Portfolio />
       <Brends />
       <Testimony />
+      <Blog />
     </div>
   );
 };
