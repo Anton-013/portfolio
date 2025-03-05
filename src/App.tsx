@@ -1,4 +1,5 @@
 import './App.css'
+import { Footer } from './layout/footer/Footer';
 import { Header } from './layout/header/Header'
 import { About } from './layout/sections/about/About';
 import { Blog } from './layout/sections/blog/Blog';
@@ -23,6 +24,7 @@ function App() {
       <Blog />
       <Results />
       <Contact />
+      <Footer />
     </div>
   );
 };

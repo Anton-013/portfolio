@@ -14,5 +14,4 @@ export const About = () => {
 
 const StyledAbout = styled.section`
     display: flex;
-    min-height: 100vh;
 `
