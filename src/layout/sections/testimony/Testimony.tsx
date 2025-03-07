@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import photo from "../../../assets/images/photo-comment.jfif";
 import { FlexWrapper } from "../../../components/FlexWrapper";
+import { Icon } from "../../../components/icon/Icon";
 
 export const Testimony = () => {
     return (
@@ -19,8 +20,8 @@ export const Testimony = () => {
                         </BlockText>
                     </FlexWrapper>
                     <Pagination>
-                        <span>⭠</span>
-                        <span>⭢</span>
+                        <Icon iconId={"arrowLeft"} />
+                        <Icon iconId={"arrowRight"} />
                     </Pagination>
                 </Review>
             </SliderReview>
