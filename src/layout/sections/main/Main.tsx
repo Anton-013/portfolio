@@ -17,7 +17,10 @@ export const Main: React.FC = () => {
 };
 
 const StyledMain = styled.div`
+    height: 100vh;
     background-image: url(${photo});
+    background-size: 130%;
+    background-position: 0% 40%;
 `
 
 const Name = styled.h2`

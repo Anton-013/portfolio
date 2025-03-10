@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-import { Logo } from "../../components/logo/Logo";
-import { Menu } from "../../components/menu/Menu";
 import { Container } from "../../components/Container";
 import { FlexWrapper } from "../../components/FlexWrapper";
+import { HeaderMenu } from "./headerMenu/HeaderMenu";
+import { theme } from "../../styles/Theme";
 
 const items = ["Home", "About", "Services", "Portfolio", "Store", "Blog", "Contact",]
 
@@ -12,8 +12,11 @@ export const Header = () => {
         <StyledHeader>
             <Container>
                 <FlexWrapper justify="space-between" align="center">
-                    <Logo />
-                    <Menu menuItems={items} />
+                    <LogoHeader>
+                        <Name>Lucas </Name>
+                        <Surname>Alves</Surname>
+                    </LogoHeader>
+                    <HeaderMenu menuItems={items} />
                 </FlexWrapper>
             </Container>
         </StyledHeader>
@@ -21,5 +24,27 @@ export const Header = () => {
 };
 
 const StyledHeader = styled.header`
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999999;
+`
 
+const LogoHeader = styled.span`
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 100%;
+    letter-spacing: -0.5%;
+`
+
+const Name = styled.span`
+    font-weight: 700;
+
+    color: ${theme.colors.accent};
+`
+
+const Surname = styled.span`
+    
 `
