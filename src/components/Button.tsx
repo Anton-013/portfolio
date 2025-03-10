@@ -11,7 +11,7 @@ export const Button = (props: ButtonPropsType) => {
         return (
             <StyledButtonType1>{props.text}</StyledButtonType1>
         )
-    } else {
+    } if (props.type === 2) {
         return (
             <StyledButtonType2>{props.text}</StyledButtonType2>
         )
@@ -27,8 +27,8 @@ const StyledButtonType1 = styled.button`
     border-radius: 30px;
 
     &:hover {
-        background-color: ${theme.colors.accent};
         border: none;
+        background-color: ${theme.colors.accent};        
         color: ${theme.colors.tertiaryBg};
     }
 `
