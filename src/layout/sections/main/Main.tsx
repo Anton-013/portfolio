@@ -17,7 +17,8 @@ export const Main: React.FC = () => {
                     <MainTitle>Graphic Designer & Ceo of Graphic Type.</MainTitle>
                     <Text>I love to provide quality works.</Text>
                     <Button type={1} text={"Get In Touch"}/>
-                    <SocialLIst />
+                    <Margin />
+                    <SocialLIst/>
                 </FlexWrapper>
             </Container>
 
@@ -37,6 +38,8 @@ const Hello = styled.span`
     font-size: 70px;
     line-height: 113%;
     letter-spacing: 2%;
+
+    margin-top: 318px;
 `
 
 const Name = styled.h2`
@@ -63,4 +66,10 @@ const Text = styled.span`
     line-height: 165%;
     letter-spacing: 1%;
     color: ${theme.colors.fontGrey};
+
+    margin-bottom: 54px;
+`
+
+const Margin = styled.div`
+    margin-top: 200px;
 `

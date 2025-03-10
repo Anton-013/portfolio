@@ -4,6 +4,7 @@ import { theme } from "../styles/Theme";
 type ButtonPropsType = {
     type: 1 | 2
     text: string
+    botton?: string
 }
 
 export const Button = (props: ButtonPropsType) => {
