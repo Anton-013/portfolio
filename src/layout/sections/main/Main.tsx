@@ -71,5 +71,5 @@ const Text = styled.span`
 `
 
 const Margin = styled.div`
-    margin-top: 200px;
+    margin-top: 20px;
 `

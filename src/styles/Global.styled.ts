@@ -30,4 +30,11 @@ export const GlobalStyle = createGlobalStyle`
         background-color: unset;
         border: none;
     }
+
+    svg:hover {
+        fill: ${theme.colors.accent};
+        stroke: ${theme.colors.accent};
+        transform: translateY(-2px);
+        scale: 1.3;
+    }
 `
