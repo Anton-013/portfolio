@@ -35,5 +35,20 @@ const StyledButtonType1 = styled.button`
 `
 
 const StyledButtonType2 = styled.button`
-    
+    width: 186px;
+    height: 56px;
+    border: 1px solid #3f3f3f;
+    border-radius: 0;
+
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 2%;
+    text-transform: uppercase;
+
+    &:hover {
+        border: none;
+        background-color: #3f3f3f;
+        color: ${theme.colors.font};
+    }
 `

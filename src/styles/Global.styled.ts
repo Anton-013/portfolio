@@ -37,4 +37,16 @@ export const GlobalStyle = createGlobalStyle`
         transform: translateY(-2px);
         scale: 1.3;
     }
+
+    progress {
+        border: 0px solid grey;
+        width: 630px;
+        height: 5px;
+    }
+    progress::-webkit-progress-bar {
+        background-color: #EAEAEA;
+    }
+    progress::-webkit-progress-value {
+        background-color: ${theme.colors.accent};
+    }
 `

@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { theme } from "../../../styles/Theme";
 
 type SkillPropsType = {
     title: string
@@ -11,19 +12,39 @@ export const Skill = (props: SkillPropsType) => {
         <StyledSkill>
             <SkillTitle>{props.title}</SkillTitle>
             <ProgressSkill>{props.percent}%</ProgressSkill>
-            <progress max={100} value={props.percent}/>
+            <ProgressBar max={100} value={props.percent}/>
         </StyledSkill>
     );
 };
 
 const StyledSkill = styled.div`
-    
+    max-width: 50%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 `
 
 const SkillTitle = styled.h3`
     display: inline;
+    margin-top: 20px;
+    
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 2.5%;
+    color: ${theme.colors.tertiaryBg};
 `
 
 const ProgressSkill = styled.span`
-    
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 2.5%;
+    color: ${theme.colors.tertiaryBg};
+`
+
+const ProgressBar = styled.progress`
+    margin-top: 10px;
+    max-width: 80vh;
 `

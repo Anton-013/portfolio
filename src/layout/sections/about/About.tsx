@@ -2,12 +2,15 @@ import React from "react";
 import styled from "styled-components";
 import { Skills } from "../../../components/skills/Skills";
 import { SectionAbout } from "../../../components/sectionAbout/SectionAbout";
+import { Container } from "../../../components/Container";
 
 export const About = () => {
     return (
         <StyledAbout>
-            <SectionAbout />
-            <Skills />
+            <Container>
+                <SectionAbout />
+                <Skills />
+            </Container>
         </StyledAbout>
     );
 };
