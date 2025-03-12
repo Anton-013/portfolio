@@ -26,7 +26,7 @@ export const Main: React.FC = () => {
     );
 };
 
-const StyledMain = styled.div`
+const StyledMain = styled.section`
     height: 100vh;
     background-image: url(${photo});
     background-size: 130%;

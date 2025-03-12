@@ -14,5 +14,7 @@ export const Skills = () => {
 };
 
 const StyledSkills = styled.div`
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 `

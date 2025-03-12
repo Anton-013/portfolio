@@ -31,6 +31,12 @@ export const GlobalStyle = createGlobalStyle`
         border: none;
     }
 
+    section + section {
+        padding: 150px 0;
+    }
+
+    
+
     svg:hover {
         fill: ${theme.colors.accent};
         stroke: ${theme.colors.accent};

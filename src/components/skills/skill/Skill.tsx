@@ -18,10 +18,11 @@ export const Skill = (props: SkillPropsType) => {
 };
 
 const StyledSkill = styled.div`
-    max-width: 50%;
+    max-width: 600px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    gap: 17px;
 `
 
 const SkillTitle = styled.h3`

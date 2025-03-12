@@ -3,13 +3,16 @@ import styled from "styled-components";
 import { Skills } from "../../../components/skills/Skills";
 import { SectionAbout } from "../../../components/sectionAbout/SectionAbout";
 import { Container } from "../../../components/Container";
+import { FlexWrapper } from "../../../components/FlexWrapper";
 
 export const About = () => {
     return (
         <StyledAbout>
             <Container>
-                <SectionAbout />
-                <Skills />
+                <FlexWrapper justify={"center"} wrap={"wrap"}>
+                    <SectionAbout />
+                    <Skills />
+                </FlexWrapper>
             </Container>
         </StyledAbout>
     );
@@ -17,4 +20,5 @@ export const About = () => {
 
 const StyledAbout = styled.section`
     display: flex;
+    gap: 100px;
 `
