@@ -4,11 +4,12 @@ import iconOfferBrush from "../../assets/images/brush.png";
 import iconOfferTShirt from "../../assets/images/t-shirt.png";
 import iconOfferBox from "../../assets/images/box.png";
 import { FlexWrapper } from "../FlexWrapper";
+import { theme } from "../../styles/Theme";
 
 export const Slider = () => {
     return (
         <StyledSlider>
-            <FlexWrapper>
+            <FlexWrapper justify={"space-between"} gap={"30px"}>
                 <Slide>
                     <IconOffer src={iconOfferBrush} alt="brush" />
                     <SlideTitle>Branding Design</SlideTitle>
@@ -27,7 +28,7 @@ export const Slider = () => {
             </FlexWrapper>
             <Pagination>
                 <span></span>
-                <span></span>
+                <span className={"active"}></span>
                 <span></span>
             </Pagination>
         </StyledSlider>
@@ -38,13 +39,22 @@ const StyledSlider = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid red;
-    max-width: 1280px;
 `
 
 const Slide = styled.div`
-    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 380px;
+    height: 380px;
     text-align: center;
+    padding: 40px;
+    background-color: #FDFDFD;
+    margin-bottom: 60px;
+
+    box-shadow: 10px 10px 30px 0px #878787;
 `
 
 const IconOffer = styled.img`
@@ -53,11 +63,24 @@ const IconOffer = styled.img`
 `
 
 const SlideTitle = styled.h3`
-    
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 100%;
+    letter-spacing: 1%;
+    text-align: center;
+    color: #535353;
+
+    margin: 35px 0 12px 0;
 `
 
 const Text = styled.p`
-    
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 185%;
+    letter-spacing: 1%;
+    text-align: center;
+    color: #868686;
 `
 
 const Pagination = styled.div`
@@ -65,8 +88,15 @@ const Pagination = styled.div`
         display: inline-block;
         width: 12px;
         height: 12px;
-        margin: 5px;
         border-radius: 50%;
-        background-color: red;
+        background-color: #E5E5E5;
+
+        & + span {
+            margin-left: 8px;
+        }
+
+        &.active {
+            background-color: ${theme.colors.accent};
+        }
     }
 `
