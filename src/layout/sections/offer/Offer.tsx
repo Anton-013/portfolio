@@ -11,7 +11,7 @@ export const Offer = () => {
         <StyledOffer>
             <Container>
                 <FlexWrapper direction={"column"} align={"center"}>
-                    <SectionTitle>What I Offer</SectionTitle>
+                    <SectionTitle margin={"38px"}>What I Offer</SectionTitle>
                     <Text>Things that I can do for my clients. Just make your good trust I love to provide quality works.</Text>
                     <Slider />
                 </FlexWrapper>

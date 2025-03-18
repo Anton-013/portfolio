@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Brend } from "../brend/Brend";
+import { theme } from "../../../../styles/Theme";
 
 const itemsIcon = [
     {
@@ -97,4 +98,5 @@ export const BrendLIst = () => {
 const StyledBrendList = styled.div`
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 `

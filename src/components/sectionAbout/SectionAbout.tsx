@@ -7,7 +7,7 @@ import { FlexWrapper } from "../FlexWrapper";
 export const SectionAbout = () => {
     return (
         <StyledSectionAbout>
-            <SectionTitle>About Me</SectionTitle>
+            <SectionTitle margin={"38px"}>About Me</SectionTitle>
             <TextContainer>
                 <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dapib eu placerat at nisl posuere aliquet amet pharetra malesuada. Spendisse nisl ac at tortor. Sit faucibus suspendisse risus vulputate pulvinar cursus suspendisse risus vulputate enim pharetra eu.</Text>
                 <Text>Sit faucibus suspendisse risus vulputate pulvinar cursus enim hareta eu. Sagittis enim morb. Suspendisse risus.</Text>

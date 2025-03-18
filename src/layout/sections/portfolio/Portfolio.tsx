@@ -23,7 +23,7 @@ export const Portfolio = () => {
         <StyledPortfolio>
             <Container>
                 <FlexWrapper direction={"column"} align={"center"}>
-                    <SectionTitle>Portfolio</SectionTitle>
+                    <SectionTitle margin={"38px"}>Portfolio</SectionTitle>
                     <MenuPortfolio menuItems={PortfolioItems} />
                     <Margin>
                         <FlexWrapper justify="space-around" wrap="wrap" gap="20px">
